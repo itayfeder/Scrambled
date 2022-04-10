@@ -1,0 +1,9 @@
+{
+  "type": "scrambled:energizing",
+  "item": {
+    "item": "minecraft:glass_bottle"
+  },
+  "result": {
+    "item": "scrambled:lightning_in_a_bottle"
+  }
+}

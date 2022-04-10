@@ -1,0 +1,36 @@
+{
+  "parent": "scrambled:adventure/get_conductor",
+  "display": {
+    "icon": {
+      "item": "scrambled:copper_sword",
+      "nbt": "{Charged:1b,ChargeTimer:12000}"
+    },
+    "title": {
+      "translate": "advancements.adventure.charge_tool.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.charge_tool.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "charge_tool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{Charged:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "charge_tool"
+    ]
+  ]
+}

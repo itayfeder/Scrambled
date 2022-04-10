@@ -1,0 +1,23 @@
+{
+  "name": "Salt",
+  "icon": "scrambled:salt",
+  "category": "scrambled:modules_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "scrambled:salt",
+      "text": "Salt is a substance with many uses. In it's raw form, you can use it on Unwaxed Copper to oxidize it faster. You can also eat it (ew) to heat yourself up from the inside out!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:cooked_beef{Salted:1b}",
+      "title": "Salting Foods",
+      "text": "Salt is mainly a cooking ingredient! If you add salt to certain cooked items (and potatoes), you can salt them, making them an even better source of food!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scrambled:jerky",
+      "text": "Don't you hate it when you have a load of Rotten Flesh with nothing to do with it? Well, now you can use Salt to create Jerky! It might not be the best food source, but when in a pinch, it's useful to have."
+    }
+  ]
+}

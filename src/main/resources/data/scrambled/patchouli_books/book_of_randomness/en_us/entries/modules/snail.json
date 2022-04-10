@@ -1,0 +1,18 @@
+{
+  "name": "Snail",
+  "icon": "scrambled:snail_spawn_egg",
+  "category": "scrambled:modules_category",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "scrambled:snail",
+      "scale": 2,
+      "offset": -0.25,
+      "name": "Snail"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "These adorable little creatures wander around the Swamps of the world. They like to climb on blocks, and are very fond of Leaves. They also really really don't like Salt. Some people say that they heard some of the snails meow..?"
+    }
+  ]
+}

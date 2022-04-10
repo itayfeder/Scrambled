@@ -1,0 +1,33 @@
+{
+  "parent": "scrambled:adventure/place_item_frame",
+  "display": {
+    "icon": {
+      "item": "scrambled:phantom_item_frame"
+    },
+    "title": {
+      "translate": "advancements.adventure.place_phantom_item_frame.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.place_phantom_item_frame.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "place_phantom_item_frame": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "scrambled:phantom_item_frame"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "place_phantom_item_frame"
+    ]
+  ]
+}

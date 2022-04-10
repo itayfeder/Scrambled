@@ -1,0 +1,9 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "scrambled:item/flower_crown",
+        "layer1": "scrambled:item/flower_crown_overlay",
+        "layer2": "scrambled:item/flower_crown_overlay2",
+        "layer3": "scrambled:item/flower_crown_overlay3"
+    }
+}

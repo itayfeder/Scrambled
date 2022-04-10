@@ -1,0 +1,75 @@
+{
+  "itemGroup.scrambled": "Scrambled",
+
+  "item.scrambled.flower_crown": "Flower Crown",
+
+  "item.scrambled.swordfish": "Swordfish",
+
+  "item.scrambled.ginger_root": "Ginger Root",
+  "item.scrambled.ground_ginger": "Ground Ginger",
+  "item.scrambled.gingerbread": "Gingerbread",
+
+  "item.scrambled.cookie_cutter_circle": "Cookie Cutter",
+  "item.scrambled.cookie_cutter_star": "Cookie Cutter",
+  "item.scrambled.cookie_cutter_snowman": "Cookie Cutter",
+  "item.scrambled.cookie_cutter_cane": "Cookie Cutter",
+  "item.scrambled.cookie_cutter_man": "Cookie Cutter",
+  "item.scrambled.cookie_cutter_creeper": "Cookie Cutter",
+
+  "item.scrambled.gingerbread_cookie_circle": "Gingerbread Cookie",
+  "item.scrambled.gingerbread_cookie_star": "Gingerbread Cookie",
+  "item.scrambled.gingerbread_cookie_snowman": "Gingerbread Cookie",
+  "item.scrambled.gingerbread_cookie_cane": "Gingerbread Cookie",
+  "item.scrambled.gingerbread_cookie_man": "Gingerbread Cookie",
+  "item.scrambled.gingerbread_cookie_creeper": "Gingerbread Cookie",
+
+  "item.scrambled.gingerbread.circle": "Circle",
+  "item.scrambled.gingerbread.star": "Star",
+  "item.scrambled.gingerbread.snowman": "Snowman",
+  "item.scrambled.gingerbread.cane": "Cane",
+  "item.scrambled.gingerbread.man": "Man",
+  "item.scrambled.gingerbread.creeper": "Creeper",
+
+  "block.scrambled.gingerbread_bricks": "Gingerbread Bricks",
+  "block.scrambled.gingerbread_brick_slab": "Gingerbread Brick Slab",
+  "block.scrambled.gingerbread_brick_stairs": "Gingerbread Brick Stairs",
+
+  "item.scrambled.phantom_item_frame": "Phantom Item Frame",
+
+  "block.scrambled.conductor": "Conductor",
+  "container.conductor": "Conductor",
+  "item.scrambled.lightning_in_a_bottle": "Lightning in a Bottle",
+  "item.scrambled.copper_sword": "Copper Sword",
+  "item.scrambled.copper_shovel": "Copper Shovel",
+  "item.scrambled.copper_pickaxe": "Copper Pickaxe",
+  "item.scrambled.copper_axe": "Copper Axe",
+  "item.scrambled.copper_hoe": "Copper Hoe",
+  "scrambled.charged": "Charged",
+
+  "entity.scrambled.snail": "Snail",
+  "item.scrambled.snail_spawn_egg": "Snail Spawn Egg",
+
+  "item.scrambled.salt": "Salt",
+  "block.scrambled.rock_salt": "Rock Salt",
+  "item.scrambled.jerky": "Jerky",
+  "scrambled.salted": "Salted",
+
+  "advancements.adventure.place_item_frame.title": "Now You See Me",
+  "advancements.adventure.place_item_frame.description": "Place an item inside the Item Frame",
+  "advancements.adventure.place_phantom_item_frame.title": "Now You Don't",
+  "advancements.adventure.place_phantom_item_frame.description": "Place an item inside the Phantom Item Frame, and watch the magic!",
+  "advancements.husbandry.get_flower_crown.title": "Peace & Love!",
+  "advancements.husbandry.get_flower_crown.description": "Create your own unique Flower Crown",
+  "advancements.adventure.get_conductor.title": "The New Age",
+  "advancements.adventure.get_conductor.description": "Get a Conductor",
+  "advancements.adventure.charge_tool.title": "Surging With Power!",
+  "advancements.adventure.charge_tool.description": "Charge a Copper tool!",
+  "advancements.adventure.get_liab.title": "Gotcha!",
+  "advancements.adventure.get_liab.description": "Capture Lightning in a Bottle",
+  "advancements.husbandry.get_swordfish.title": "Identity Crisis",
+  "advancements.husbandry.get_swordfish.description": "Catch this weird fish... or is it a sword?",
+  "advancements.husbandry.get_gingerbread.title": "Time to Get Jolly!",
+  "advancements.husbandry.get_gingerbread.description": "Bake some tasty Gingerbread",
+  "advancements.husbandry.all_cookies.title": "Cookie Collector",
+  "advancements.husbandry.all_cookies.description": "Create all of the Gingerbread Cookies!"
+}

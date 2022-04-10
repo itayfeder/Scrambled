@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:item_frame"
+    },
+    "title": {
+      "translate": "advancements.adventure.place_item_frame.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.place_item_frame.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "place_item_frame": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:item_frame"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "place_item_frame"
+    ]
+  ]
+}

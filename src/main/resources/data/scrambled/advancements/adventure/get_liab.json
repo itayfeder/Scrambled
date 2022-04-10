@@ -1,0 +1,37 @@
+{
+  "parent": "scrambled:adventure/get_conductor",
+  "display": {
+    "icon": {
+      "item": "scrambled:lightning_in_a_bottle"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_liab.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_liab.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_liab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:lightning_in_a_bottle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_liab"
+    ]
+  ]
+}

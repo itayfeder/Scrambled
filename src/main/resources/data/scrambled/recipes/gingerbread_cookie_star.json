@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gingerbread_cookie",
+  "ingredients": [
+    {
+      "item": "scrambled:cookie_cutter_star"
+    },
+	{
+      "item": "scrambled:gingerbread"
+    },
+	{
+      "item": "minecraft:sugar"
+    },
+	{
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "scrambled:gingerbread_cookie_star",
+    "count": 4
+  }
+}

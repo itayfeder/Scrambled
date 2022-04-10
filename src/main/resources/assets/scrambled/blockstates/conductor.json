@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "scrambled:block/conductor_off"
+    },
+    "powered=true": {
+      "model": "scrambled:block/conductor_on"
+    }
+  }
+}

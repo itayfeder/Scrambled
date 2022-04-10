@@ -1,0 +1,12 @@
+{
+    "name": "Flower Crown",
+    "icon": "scrambled:flower_crown{display: {colors: [I; 16700985, 4614891, 15544364]}}",
+    "category": "scrambled:modules_category",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "scrambled:flower_crown{display: {colors: [I; 16700985, 4614891, 15544364]}}",
+            "text": "Flower Crowns are a new decorative armor item. This cute crown is made out of flowers you can find in your world, all woven into a beautiful crown. This crown also attracts Bees. Flower Crowns can be made using any combination of flowers, so you can customize your crowns to your liking!"
+        }
+    ]
+}

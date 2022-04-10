@@ -1,0 +1,22 @@
+{
+  "name": "Conducting",
+  "icon": "scrambled:conductor",
+  "category": "scrambled:modules_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "scrambled:conductor",
+      "text": "It all begins with a Conductor. This new block can be placed below a Lightning rod, can hold an item. When lightning strikes the rod, the Conductor will 'charge' the item (if it can be charged of course)."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "scrambled:lightning_in_a_bottle",
+      "text": "The power of thunder, in the palm of your hands... This new weapon can be created by charging an empty bottle. You can also throw it to summon a lightning bolt where it hits. Useful for creating other charged items, charging creepers and getting you favorite Mooshroom color!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "scrambled:copper_sword{Charged:1b,ChargeTimer:12000}",
+      "text": "But that's not all! You can charge Copper Tools to make them stronger and faster! (I know copper tools are not that original, I just wanted to give them a little spin)"
+    }
+  ]
+}

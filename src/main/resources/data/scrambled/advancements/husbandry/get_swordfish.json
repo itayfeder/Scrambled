@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:husbandry/fishy_business",
+  "display": {
+    "icon": {
+      "item": "scrambled:swordfish"
+    },
+    "title": {
+      "translate": "advancements.husbandry.get_swordfish.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.get_swordfish.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_swordfish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:swordfish"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_swordfish"
+    ]
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "scrambled:cookie_cutter_circle"
+  },
+  "result": "scrambled:cookie_cutter_star",
+  "count": 1
+}

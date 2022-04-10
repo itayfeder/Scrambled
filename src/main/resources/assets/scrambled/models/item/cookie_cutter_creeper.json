@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "scrambled:item/ginger/cookie_cutter_creeper"
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "scrambled:gingerbread_bricks",
+	"scrambled:gingerbread_brick_slab",
+	"scrambled:gingerbread_brick_stairs"
+  ]
+}

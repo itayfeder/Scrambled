@@ -1,0 +1,27 @@
+{
+  "name": "Gingerbread",
+  "icon": "scrambled:gingerbread_cookie_man",
+  "category": "scrambled:modules_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "scrambled:ginger_root",
+      "text": "Ginger Roots is a 'luxury' food item, only found in igloos and cold village houses (taiga and snowy). While you cant eat it, you can grind it into Ground Ginger in a crafting table. Using Ground Ginger, you can create Gingerbread."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scrambled:gingerbread",
+      "text": "Gingerbread is the core of the entire module. Using Gingerbread, you can create Gingerbread Bricks and Gingerbread Cookies. But it's not as simple as you might think..."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scrambled:cc_circle",
+      "text": "To create Gingerbread Cookies, you first need to create a Cookie Cutter. The basic Cookie Cutter is a circular one, but you can shape your cutter in different shapes using the Stonecutter."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scrambled:gingerbread_cookie_man",
+      "text": "After you shape your cutter, simple use the recipe above with your cutter, to create beautiful Gingerbread Cookies!"
+    }
+  ]
+}

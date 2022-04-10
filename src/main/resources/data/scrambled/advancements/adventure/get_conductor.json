@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:adventure/lightning_rod_with_villager_no_fire",
+  "display": {
+    "icon": {
+      "item": "scrambled:conductor"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_conductor.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_conductor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_conductor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:conductor"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_conductor"
+    ]
+  ]
+}

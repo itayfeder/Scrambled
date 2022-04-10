@@ -1,0 +1,98 @@
+{
+  "parent": "scrambled:husbandry/get_gingerbread",
+  "display": {
+    "icon": {
+      "item": "scrambled:gingerbread_cookie_man"
+    },
+    "title": {
+      "translate": "advancements.husbandry.all_cookies.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.all_cookies.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "criteria": {
+    "circle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:gingerbread_cookie_circle"
+            ]
+          }
+        ]
+      }
+    },
+	"star": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:gingerbread_cookie_star"
+            ]
+          }
+        ]
+      }
+    },
+	"snowman": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:gingerbread_cookie_snowman"
+            ]
+          }
+        ]
+      }
+    },
+	"cane": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:gingerbread_cookie_cane"
+            ]
+          }
+        ]
+      }
+    },
+	"man": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:gingerbread_cookie_man"
+            ]
+          }
+        ]
+      }
+    },
+	"creeper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:gingerbread_cookie_creeper"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [ "circle" ], [ "star" ], [ "snowman" ], [ "cane" ], [ "man" ], [ "creeper" ]
+  ]
+}

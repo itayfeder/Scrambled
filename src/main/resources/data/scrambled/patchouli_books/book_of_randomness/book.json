@@ -1,0 +1,7 @@
+{
+    "name": "Book Of Randomness",
+    "landing_text": "The official documentation of all randomness.",
+    "version": 1,
+    "model": "scrambled:book_of_randomness",
+	"creative_tab": "scrambled"
+}

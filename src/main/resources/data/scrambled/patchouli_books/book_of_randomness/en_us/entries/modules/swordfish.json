@@ -1,0 +1,12 @@
+{
+  "name": "Swordfish",
+  "icon": "scrambled:swordfish",
+  "category": "scrambled:modules_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "scrambled:swordfish",
+      "text": "Some say it's a sword, and some say it's a fish, but who knows? This weird weapon is an oddly good weapon! It deals 6.5 damage points and is faster then normal swords. You can also eat it..."
+    }
+  ]
+}

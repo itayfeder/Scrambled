@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "scrambled:block/conductor_top_on",
+    "bottom": "minecraft:block/copper_block",
+    "side": "scrambled:block/conductor_side_on"
+  }
+}
