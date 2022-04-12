@@ -52,6 +52,6 @@ public class ItemInit {
     public static final RegistryObject<Item> ROCK_SALT = ITEMS.register("rock_salt", () -> new BlockItem(BlockInit.ROCK_SALT.get(), (new Item.Properties()).tab(ScrambledMod.TAB_MOD)));
     public static final RegistryObject<Item> JERKY = ITEMS.register("jerky", () -> new Item((new Item.Properties()).tab(ScrambledMod.TAB_MOD).stacksTo(64).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.5F).fast().build())));
 
-    public static final RegistryObject<Item> RING_OF_ATTRACTION = ITEMS.register("ring_of_attraction", () -> new RingOfAttractionItem((new Item.Properties().stacksTo(1).durability(150)).tab(ScrambledMod.TAB_MOD)));
+    public static final RegistryObject<Item> RING_OF_ATTRACTION = ITEMS.register("ring_of_attraction", () -> new RingOfAttractionItem((new Item.Properties().stacksTo(1).durability(500)).tab(ScrambledMod.TAB_MOD)));
 
 }
