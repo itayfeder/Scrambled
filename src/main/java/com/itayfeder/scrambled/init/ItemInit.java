@@ -38,8 +38,6 @@ public class ItemInit {
     public static final RegistryObject<Item> GINGERBREAD_BRICK_STAIRS = ITEMS.register("gingerbread_brick_stairs", () -> new BlockItem(BlockInit.GINGERBREAD_BRICK_STAIRS.get(), (new Item.Properties()).tab(ScrambledMod.TAB_MOD)));
     public static final RegistryObject<Item> GINGERBREAD_BRICK_SLAB = ITEMS.register("gingerbread_brick_slab", () -> new BlockItem(BlockInit.GINGERBREAD_BRICK_SLAB.get(), (new Item.Properties()).tab(ScrambledMod.TAB_MOD)));
 
-    public static final RegistryObject<Item> PHANTOM_ITEM_FRAME = ITEMS.register("phantom_item_frame", () -> new PhantomItemFrameItem(EntityTypeInit.PHANTOM_ITEM_FRAME, (new Item.Properties()).tab(ScrambledMod.TAB_MOD)));
-
     public static final RegistryObject<Item> CONDUCTOR = ITEMS.register("conductor", () -> new BlockItem(BlockInit.CONDUCTOR.get(), (new Item.Properties()).tab(ScrambledMod.TAB_MOD)));
     public static final RegistryObject<Item> LIGHTNING_IN_A_BOTTLE = ITEMS.register("lightning_in_a_bottle", () -> new LightningInABottleItem((new Item.Properties()).tab(ScrambledMod.TAB_MOD).stacksTo(1).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword", () -> new CopperSwordItem(ModdedTiers.COPPER, 3, -2.4F, (new Item.Properties()).tab(ScrambledMod.TAB_MOD)));
@@ -53,5 +51,7 @@ public class ItemInit {
     public static final RegistryObject<Item> SALT = ITEMS.register("salt", () -> new SaltItem((new Item.Properties()).tab(ScrambledMod.TAB_MOD).food((new FoodProperties.Builder()).nutrition(1).saturationMod(2F).fast().build())));
     public static final RegistryObject<Item> ROCK_SALT = ITEMS.register("rock_salt", () -> new BlockItem(BlockInit.ROCK_SALT.get(), (new Item.Properties()).tab(ScrambledMod.TAB_MOD)));
     public static final RegistryObject<Item> JERKY = ITEMS.register("jerky", () -> new Item((new Item.Properties()).tab(ScrambledMod.TAB_MOD).stacksTo(64).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.5F).fast().build())));
+
+    public static final RegistryObject<Item> RING_OF_ATTRACTION = ITEMS.register("ring_of_attraction", () -> new RingOfAttractionItem((new Item.Properties().stacksTo(1).durability(150)).tab(ScrambledMod.TAB_MOD)));
 
 }

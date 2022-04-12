@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "# #",
+    "W#W"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:copper_ingot"
+    },
+    "#": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "scrambled:ring_of_attraction"
+  }
+}

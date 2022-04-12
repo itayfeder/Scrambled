@@ -1,0 +1,18 @@
+{
+    "name": "Ring of Attraction",
+    "icon": "scrambled:ring_of_attraction",
+    "category": "scrambled:modules_category",
+    "pages": [
+        {
+            "type": "patchouli:crafting",
+            "recipe": "scrambled:ring_of_attraction",
+            "text": "The Ring of Attraction is a powerful tool. It utilises the Netherite inside of it to attract items on the ground. Tt can attract items even behind walls! But beware, as it has durability."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:enchanted_book{StoredEnchantments: [{lvl: 3s, id: \"scrambled:potent\"}]}",
+            "title": "Potent Enchantment",
+            "text": "The Ring of Attraction also has a new enchantment: Potent! This enchantment is used to make the reach of the ring further. It can also be enchanted with Unbreaking and Mending, but also cursed with Curse of Vanishing."
+        }
+    ]
+}

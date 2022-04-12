@@ -53,6 +53,9 @@
   "block.scrambled.rock_salt": "Rock Salt",
   "item.scrambled.jerky": "Jerky",
   "scrambled.salted": "Salted",
+  
+  "item.scrambled.ring_of_attraction": "Ring of Attraction",
+  "enchantment.scrambled.potent": "Potent",
 
   "advancements.adventure.place_item_frame.title": "Now You See Me",
   "advancements.adventure.place_item_frame.description": "Place an item inside the Item Frame",
@@ -71,5 +74,7 @@
   "advancements.husbandry.get_gingerbread.title": "Time to Get Jolly!",
   "advancements.husbandry.get_gingerbread.description": "Bake some tasty Gingerbread",
   "advancements.husbandry.all_cookies.title": "Cookie Collector",
-  "advancements.husbandry.all_cookies.description": "Create all of the Gingerbread Cookies!"
+  "advancements.husbandry.all_cookies.description": "Create all of the Gingerbread Cookies!",
+  "advancements.nether.ring_of_attraction.title": "Opposites Attract!",
+  "advancements.nether.ring_of_attraction.description": "Acquire a Ring of Attraction"
 }

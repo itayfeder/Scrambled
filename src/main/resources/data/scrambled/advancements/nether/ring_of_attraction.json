@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:nether/obtain_ancient_debris",
+  "display": {
+    "icon": {
+      "item": "scrambled:ring_of_attraction"
+    },
+    "title": {
+      "translate": "advancements.nether.ring_of_attraction.title"
+    },
+    "description": {
+      "translate": "advancements.nether.ring_of_attraction.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "criteria": {
+    "ring_of_attraction": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:ring_of_attraction"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ring_of_attraction"
+    ]
+  ]
+}

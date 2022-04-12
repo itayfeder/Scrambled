@@ -3,7 +3,6 @@ package com.itayfeder.scrambled.utils;
 import com.itayfeder.scrambled.ScrambledMod;
 import com.itayfeder.scrambled.client.gui.ConductorScreen;
 import com.itayfeder.scrambled.client.models.entities.SnailModel;
-import com.itayfeder.scrambled.client.renderers.entities.PhantomItemFrameRenderer;
 import com.itayfeder.scrambled.client.renderers.entities.SnailRenderer;
 import com.itayfeder.scrambled.init.EntityTypeInit;
 import com.itayfeder.scrambled.init.ItemInit;
@@ -26,7 +25,6 @@ public class ClientSetup {
     @SubscribeEvent
     @OnlyIn(Dist.CLIENT)
     public static void init(final FMLClientSetupEvent event) {
-        EntityRenderers.register(EntityTypeInit.PHANTOM_ITEM_FRAME.get(), PhantomItemFrameRenderer::new);
         EntityRenderers.register(EntityTypeInit.LIGHTNING_IN_A_BOTTLE.get(), ThrownItemRenderer::new);
         EntityRenderers.register(EntityTypeInit.SNAIL.get(), SnailRenderer::new);
 
