@@ -1,7 +1,9 @@
 package com.itayfeder.scrambled.loot;
 
 import com.google.gson.JsonObject;
+import com.itayfeder.scrambled.ScrambledMod;
 import com.itayfeder.scrambled.init.ItemInit;
+import com.itayfeder.scrambled.utils.ScrambledConfig;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -21,10 +23,13 @@ public class GingerDungeonModifier extends LootModifier {
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        if (context.getRandom().nextFloat() < 0.2) {
-            generatedLoot.remove(context.getRandom().nextInt(generatedLoot.size()));
-            generatedLoot.add(new ItemStack(ItemInit.GINGER_ROOT.get(), context.getRandom().nextInt(3, 12)));
+        if (ScrambledConfig.COMMON.findGinger.get()) {
+            if (context.getRandom().nextFloat() < 0.2) {
+                generatedLoot.remove(context.getRandom().nextInt(generatedLoot.size()));
+                generatedLoot.add(new ItemStack(ItemInit.GINGER_ROOT.get(), context.getRandom().nextInt(3, 12)));
+            }
         }
+
         return generatedLoot;
     }
 

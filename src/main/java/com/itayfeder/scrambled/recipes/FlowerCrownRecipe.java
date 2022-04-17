@@ -31,7 +31,7 @@ public class FlowerCrownRecipe extends CustomRecipe {
                         }
                     }
                     else if (j == 1) {
-                        if (!itemstack.is(ModTags.CROWN_FLOWERS)) {
+                        if (!itemstack.is(ModTags.ItemTags.CROWN_FLOWERS)) {
                             return false;
                         }
                     }
@@ -48,7 +48,7 @@ public class FlowerCrownRecipe extends CustomRecipe {
         ItemStack flower1 = p_44513_.getItem(p_44513_.getWidth());
         ItemStack flower2 = p_44513_.getItem(1 + p_44513_.getWidth());
         ItemStack flower3 = p_44513_.getItem(2 + p_44513_.getWidth());
-        if (!flower1.is(ModTags.CROWN_FLOWERS) || !flower2.is(ModTags.CROWN_FLOWERS) || !flower3.is(ModTags.CROWN_FLOWERS)) {
+        if (!flower1.is(ModTags.ItemTags.CROWN_FLOWERS) || !flower2.is(ModTags.ItemTags.CROWN_FLOWERS) || !flower3.is(ModTags.ItemTags.CROWN_FLOWERS)) {
             return ItemStack.EMPTY;
         } else {
             ItemStack itemstack1 = new ItemStack(ItemInit.FLOWER_CROWN.get(), 1);

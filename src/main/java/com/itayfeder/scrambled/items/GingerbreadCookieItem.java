@@ -9,14 +9,18 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class GingerbreadCookieItem extends Item {
     private CookieCutterItem.CookieType cookieType;
+    public static final Map<Item, Item> CUTTER_TO_COOKIE = new HashMap<>();
 
-    public GingerbreadCookieItem(Properties p_41383_, CookieCutterItem.CookieType c) {
+    public GingerbreadCookieItem(Properties p_41383_, CookieCutterItem.CookieType c, Item cutter) {
         super(p_41383_);
         this.cookieType = c;
+        CUTTER_TO_COOKIE.put(cutter, this);
     }
 
     @Override

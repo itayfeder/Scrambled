@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "scrambled:gingerbread_bricks"
-  },
-  "result": "scrambled:gingerbread_brick_slab",
-  "count": 2
-}

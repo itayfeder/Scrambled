@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableGingerbreadRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "X#X",
+          "# #",
+          "X#X"
+        ],
+        "key": {
+          "#": {
+            "item": "minecraft:iron_ingot"
+          },
+          "X": {
+            "item": "minecraft:iron_nugget"
+          }
+        },
+        "result": {
+          "item": "scrambled:cookie_cutter_circle",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

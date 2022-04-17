@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableGingerbreadRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "scrambled:ginger_root"
+          }
+        ],
+        "result": {
+          "item": "scrambled:ground_ginger",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

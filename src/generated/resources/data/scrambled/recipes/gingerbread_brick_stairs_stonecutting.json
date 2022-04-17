@@ -1,0 +1,21 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableGingerbreadRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "scrambled:gingerbread_bricks"
+        },
+        "result": "scrambled:gingerbread_brick_stairs",
+        "count": 1
+      }
+    }
+  ]
+}

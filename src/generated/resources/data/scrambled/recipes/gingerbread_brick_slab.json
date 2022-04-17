@@ -1,0 +1,28 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableGingerbreadRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "###"
+        ],
+        "key": {
+          "#": {
+            "item": "scrambled:gingerbread_bricks"
+          }
+        },
+        "result": {
+          "item": "scrambled:gingerbread_brick_slab",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "scrambled:ring_of_attraction",
-            "text": "The Ring of Attraction is a powerful tool. It utilises the Netherite inside of it to attract items on the ground. Tt can attract items even behind walls! But beware, as it has durability."
+            "text": "The Ring of Attraction is a powerful tool. It utilises the Netherite inside of it to attract items on the ground. It can attract items even behind walls! But beware, as it has durability."
         },
         {
             "type": "patchouli:spotlight",

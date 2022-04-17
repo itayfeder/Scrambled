@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableMahoganyRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "#  ",
+          "## ",
+          "###"
+        ],
+        "key": {
+          "#": {
+            "item": "scrambled:mahogany_planks"
+          }
+        },
+        "result": {
+          "item": "scrambled:mahogany_stairs",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

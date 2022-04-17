@@ -2,6 +2,7 @@ package com.itayfeder.scrambled.loot;
 
 import com.google.gson.JsonObject;
 import com.itayfeder.scrambled.init.ItemInit;
+import com.itayfeder.scrambled.utils.ScrambledConfig;
 import com.mojang.realmsclient.util.JsonUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -24,9 +25,11 @@ public class SwordfishFishingModifier extends LootModifier {
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        if (context.getRandom().nextFloat() < 0.1) {
-            generatedLoot.clear();
-            generatedLoot.add(new ItemStack(ItemInit.SWORDFISH.get(), 1));
+        if (ScrambledConfig.COMMON.fishSwordfish.get()) {
+            if (context.getRandom().nextFloat() < 0.1) {
+                generatedLoot.clear();
+                generatedLoot.add(new ItemStack(ItemInit.SWORDFISH.get(), 1));
+            }
         }
         return generatedLoot;
     }

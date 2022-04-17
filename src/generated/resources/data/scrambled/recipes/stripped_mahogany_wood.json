@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableMahoganyRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bark",
+        "pattern": [
+          "##",
+          "##"
+        ],
+        "key": {
+          "#": {
+            "item": "scrambled:stripped_mahogany_log"
+          }
+        },
+        "result": {
+          "item": "scrambled:stripped_mahogany_wood",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

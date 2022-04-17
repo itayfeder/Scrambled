@@ -1,3 +1,16 @@
 {
-  "type": "scrambled:special_salting"
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableSaltRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "scrambled:special_salting"
+      }
+    }
+  ]
 }

@@ -1,9 +1,22 @@
 {
-  "type": "scrambled:energizing",
-  "item": {
-    "item": "minecraft:glass_bottle"
-  },
-  "result": {
-    "item": "scrambled:lightning_in_a_bottle"
-  }
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableCopperConductorRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "scrambled:energizing",
+        "item": {
+          "item": "minecraft:glass_bottle"
+        },
+        "result": {
+          "item": "scrambled:lightning_in_a_bottle"
+        }
+      }
+    }
+  ]
 }

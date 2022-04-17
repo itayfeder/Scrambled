@@ -57,6 +57,21 @@
   "item.scrambled.ring_of_attraction": "Ring of Attraction",
   "enchantment.scrambled.potent": "Potent",
 
+  "block.scrambled.mahogany_planks": "Mahogany Planks",
+  "block.scrambled.mahogany_sapling": "Mahogany Sapling",
+  "block.scrambled.mahogany_log": "Mahogany Log",
+  "block.scrambled.stripped_mahogany_log": "Stripped Mahogany Planks",
+  "block.scrambled.stripped_mahogany_wood": "Stripped Mahogany Wood",
+  "block.scrambled.mahogany_wood": "Mahogany Wood",
+  "block.scrambled.mahogany_stairs": "Mahogany Stairs",
+  "block.scrambled.mahogany_slab": "Mahogany Slab",
+  "block.scrambled.mahogany_leaves": "Mahogany Leaves",
+  "block.scrambled.mahogany_fence": "Mahogany Fence",
+  "block.scrambled.mahogany_fence_gate": "Mahogany Fence Gate",
+  "block.scrambled.mahogany_sign": "Mahogany Sign",
+  "block.scrambled.mahogany_button": "Mahogany Button",
+  "block.scrambled.mahogany_pressure_plate": "Mahogany Pressure Plate",
+
   "advancements.adventure.place_item_frame.title": "Now You See Me",
   "advancements.adventure.place_item_frame.description": "Place an item inside the Item Frame",
   "advancements.adventure.place_phantom_item_frame.title": "Now You Don't",
@@ -76,5 +91,7 @@
   "advancements.husbandry.all_cookies.title": "Cookie Collector",
   "advancements.husbandry.all_cookies.description": "Create all of the Gingerbread Cookies!",
   "advancements.nether.ring_of_attraction.title": "Opposites Attract!",
-  "advancements.nether.ring_of_attraction.description": "Acquire a Ring of Attraction"
+  "advancements.nether.ring_of_attraction.description": "Acquire a Ring of Attraction",
+  "advancements.story.get_hardwood.title": "Acquire Hardwood",
+  "advancements.story.get_hardwood.description": "Find some Mahogany Wood"
 }

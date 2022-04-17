@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "scrambled:block/mahogany/mahogany_leaves"
+  }
+}

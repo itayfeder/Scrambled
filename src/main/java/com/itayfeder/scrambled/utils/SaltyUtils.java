@@ -8,7 +8,7 @@ import javax.annotation.Nullable;
 public class SaltyUtils {
 
     public static boolean IsSaltable(ItemStack stack) {
-        return stack.is(ModTags.SALTABLE);
+        return stack.is(ModTags.ItemTags.SALTABLE);
     }
 
     public static boolean IsSalted(@Nullable CompoundTag p_43578_) {

@@ -3,6 +3,7 @@ package com.itayfeder.scrambled.blocks;
 import com.itayfeder.scrambled.blockentities.ConductorBlockEntity;
 import com.itayfeder.scrambled.init.BlockEntityTypeInit;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.MenuProvider;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.HopperBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -71,6 +73,18 @@ public class ConductorBlock extends BaseEntityBlock {
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_55673_) {
         p_55673_.add(POWERED);
+    }
+
+    public void onRemove(BlockState p_54085_, Level p_54086_, BlockPos p_54087_, BlockState p_54088_, boolean p_54089_) {
+        if (!p_54085_.is(p_54088_.getBlock())) {
+            BlockEntity blockentity = p_54086_.getBlockEntity(p_54087_);
+            if (blockentity instanceof ConductorBlockEntity) {
+                Containers.dropContents(p_54086_, p_54087_, (ConductorBlockEntity)blockentity);
+                p_54086_.updateNeighbourForOutputSignal(p_54087_, this);
+            }
+
+            super.onRemove(p_54085_, p_54086_, p_54087_, p_54088_, p_54089_);
+        }
     }
 
     @Nullable

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "scrambled:block/mahogany/mahogany_planks"
+  }
+}

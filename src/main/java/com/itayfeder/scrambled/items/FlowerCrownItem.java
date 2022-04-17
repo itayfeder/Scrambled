@@ -47,6 +47,14 @@ public class FlowerCrownItem extends ArmorItem {
         }
     }
 
+    @Override
+    public ItemStack getDefaultInstance() {
+        ItemStack stack = new ItemStack(this);
+        int[] colors = {FLOWER_TO_COLOR.get(Blocks.DANDELION), FLOWER_TO_COLOR.get(Blocks.DANDELION), FLOWER_TO_COLOR.get(Blocks.POPPY)};
+        setColor(stack, colors);
+        return stack;
+    }
+
     public static boolean hasCustomColor(ItemStack p_41114_) {
         CompoundTag compoundtag = p_41114_.getTagElement("display");
         return compoundtag != null && compoundtag.contains("colors", 11);

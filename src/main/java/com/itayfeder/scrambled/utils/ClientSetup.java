@@ -4,11 +4,12 @@ import com.itayfeder.scrambled.ScrambledMod;
 import com.itayfeder.scrambled.client.gui.ConductorScreen;
 import com.itayfeder.scrambled.client.models.entities.SnailModel;
 import com.itayfeder.scrambled.client.renderers.entities.SnailRenderer;
-import com.itayfeder.scrambled.init.EntityTypeInit;
-import com.itayfeder.scrambled.init.ItemInit;
-import com.itayfeder.scrambled.init.MenuInit;
+import com.itayfeder.scrambled.init.*;
 import com.itayfeder.scrambled.items.charged.IChargedTool;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -30,6 +31,8 @@ public class ClientSetup {
 
         MenuScreens.register(MenuInit.CONDUCTOR.get(), ConductorScreen::new);
 
+        ItemBlockRenderTypes.setRenderLayer(BlockInit.MAHOGANY_SAPLING.get(), RenderType.cutout());
+
         ItemProperties.register(ItemInit.COPPER_SWORD.get(), new ResourceLocation("charged"), (p_174610_, p_174611_, p_174612_, p_174613_) -> {
             return IChargedTool.isChargeBarVisible(p_174610_) ? 1.0F : 0.0F;
         });
@@ -50,6 +53,11 @@ public class ClientSetup {
     @SubscribeEvent
     public static void onLayerRenderer(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(SnailModel.LAYER_LOCATION, SnailModel::createBodyLayer);
+    }
+
+    @SubscribeEvent
+    public static void onRendererSetup(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerBlockEntityRenderer(BlockEntityTypeInit.SCRAMBLED_SIGN.get(), SignRenderer::new);
     }
 
     @SubscribeEvent

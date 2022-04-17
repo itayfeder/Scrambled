@@ -1,3 +1,16 @@
 {
-  "type": "scrambled:special_flowercrown"
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableFlowerCrownRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "scrambled:special_flowercrown"
+      }
+    }
+  ]
 }

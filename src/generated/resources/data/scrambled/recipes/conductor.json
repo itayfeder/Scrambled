@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableCopperConductorRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "#R#",
+          "#A#",
+          "###"
+        ],
+        "key": {
+          "#": {
+            "item": "minecraft:copper_ingot"
+          },
+          "R": {
+            "item": "minecraft:redstone"
+          },
+          "A": {
+            "item": "minecraft:amethyst_shard"
+          }
+        },
+        "result": {
+          "item": "scrambled:conductor"
+        }
+      }
+    }
+  ]
+}

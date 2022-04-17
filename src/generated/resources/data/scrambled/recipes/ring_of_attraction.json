@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableRingOfAttractionRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "X#X",
+          "# #",
+          "X#X"
+        ],
+        "key": {
+          "#": {
+            "item": "minecraft:netherite_ingot"
+          },
+          "X": {
+            "item": "minecraft:copper_ingot"
+          }
+        },
+        "result": {
+          "item": "scrambled:ring_of_attraction"
+        }
+      }
+    }
+  ]
+}

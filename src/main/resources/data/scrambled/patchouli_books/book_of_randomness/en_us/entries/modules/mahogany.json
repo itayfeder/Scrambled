@@ -1,0 +1,12 @@
+{
+    "name": "Mahogany",
+    "icon": "scrambled:mahogany_log",
+    "category": "scrambled:modules_category",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "scrambled:mahogany_log",
+            "text": "Mahogany is a new wood type available in the mod! This wood type is considered 'Hardwood', as it's a lot tougher and stronger then other wood types. It also has a neat red coloring"
+        }
+    ]
+}

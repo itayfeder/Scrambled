@@ -15,7 +15,7 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "scrambled:cc_circle",
+      "recipe": "scrambled:cookie_cutter_circle",
       "text": "To create Gingerbread Cookies, you first need to create a Cookie Cutter. The basic Cookie Cutter is a circular one, but you can shape your cutter in different shapes using the Stonecutter."
     },
     {

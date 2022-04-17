@@ -1,0 +1,21 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableGingerbreadRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "scrambled:cookie_cutter_circle"
+        },
+        "result": "scrambled:cookie_cutter_star",
+        "count": 1
+      }
+    }
+  ]
+}

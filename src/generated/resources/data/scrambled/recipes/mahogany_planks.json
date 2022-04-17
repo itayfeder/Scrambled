@@ -1,0 +1,26 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableMahoganyRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks",
+        "ingredients": [
+          {
+            "tag": "scrambled:mahogany_logs"
+          }
+        ],
+        "result": {
+          "item": "scrambled:mahogany_planks",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

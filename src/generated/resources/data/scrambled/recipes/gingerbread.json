@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableGingerbreadRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "minecraft:sugar"
+          },
+          {
+            "item": "minecraft:egg"
+          },
+          {
+            "item": "minecraft:egg"
+          },
+          {
+            "item": "scrambled:ground_ginger"
+          }
+        ],
+        "result": {
+          "item": "scrambled:gingerbread",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

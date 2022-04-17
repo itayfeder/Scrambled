@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableMahoganyRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "W#W",
+          "W#W"
+        ],
+        "key": {
+          "W": {
+            "item": "scrambled:mahogany_planks"
+          },
+          "#": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "scrambled:mahogany_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}
