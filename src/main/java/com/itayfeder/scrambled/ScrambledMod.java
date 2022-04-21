@@ -8,6 +8,7 @@ import com.itayfeder.scrambled.data.tags.ScrambledItemTagsProvider;
 import com.itayfeder.scrambled.events.BiomeSpawningEvents;
 import com.itayfeder.scrambled.init.*;
 import com.itayfeder.scrambled.utils.ConfigEnabledCondition;
+import com.itayfeder.scrambled.utils.ModdedWoodTypes;
 import com.itayfeder.scrambled.utils.ScrambledConfig;
 import com.itayfeder.scrambled.utils.ScrambledCreativeTab;
 import com.mojang.logging.LogUtils;
@@ -21,6 +22,7 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentInstance;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -75,6 +77,8 @@ public class ScrambledMod
 
         event.enqueueWork(() -> {
             BiomeSpawningEvents.Setup();
+
+            WoodType.register(ModdedWoodTypes.MAHOGANY);
         });
     }
 

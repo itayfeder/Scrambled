@@ -9,6 +9,7 @@ import com.itayfeder.scrambled.items.charged.IChargedTool;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
@@ -47,6 +48,10 @@ public class ClientSetup {
         });
         ItemProperties.register(ItemInit.COPPER_HOE.get(), new ResourceLocation("charged"), (p_174610_, p_174611_, p_174612_, p_174613_) -> {
             return IChargedTool.isChargeBarVisible(p_174610_) ? 1.0F : 0.0F;
+        });
+
+        event.enqueueWork(() -> {
+            Sheets.addWoodType(ModdedWoodTypes.MAHOGANY);
         });
     }
 
