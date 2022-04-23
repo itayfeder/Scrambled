@@ -1,7 +1,9 @@
 package com.itayfeder.scrambled.init;
 
 import com.itayfeder.scrambled.ScrambledMod;
+import com.itayfeder.scrambled.blocks.CloudChunkBlock;
 import com.itayfeder.scrambled.blocks.ConductorBlock;
+import com.itayfeder.scrambled.blocks.SoggyCloudChunkBlock;
 import com.itayfeder.scrambled.blocks.grower.MahoganyTreeGrower;
 import com.itayfeder.scrambled.blocks.signs.ScrambledStandingSignBlock;
 import com.itayfeder.scrambled.blocks.signs.ScrambledWallSignBlock;
@@ -54,6 +56,13 @@ public class BlockInit {
     public static final RegistryObject<Block> MAHOGANY_BUTTON = BLOCKS.register("mahogany_button", () -> new WoodButtonBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(1F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> MAHOGANY_PRESSURE_PLATE = BLOCKS.register("mahogany_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().noCollission().strength(1F)));
     public static final RegistryObject<Block> MAHOGANY_SAPLING = BLOCKS.register("mahogany_sapling", () -> new SaplingBlock(new MahoganyTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
+
+    public static final RegistryObject<Block> CLOUD_CHUNK = BLOCKS.register("cloud_chunk", () -> new CloudChunkBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.5F).sound(SoundType.WOOL).noCollission().noOcclusion().isValidSpawn((p_187426_, p_187427_, p_187428_, p_187429_) -> {
+        return false;
+    })));
+    public static final RegistryObject<Block> SOGGY_CLOUD_CHUNK = BLOCKS.register("soggy_cloud_chunk", () -> new SoggyCloudChunkBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.5F).sound(SoundType.WOOL).noCollission().noOcclusion().randomTicks().isValidSpawn((p_187426_, p_187427_, p_187428_, p_187429_) -> {
+        return false;
+    })));
 
     private static Boolean ocelotOrParrot(BlockState p_50822_, BlockGetter p_50823_, BlockPos p_50824_, EntityType<?> p_50825_) {
         return p_50825_ == EntityType.OCELOT || p_50825_ == EntityType.PARROT;

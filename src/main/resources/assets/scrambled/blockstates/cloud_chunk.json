@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "scrambled:block/cloud_chunk"
+    }
+  }
+}

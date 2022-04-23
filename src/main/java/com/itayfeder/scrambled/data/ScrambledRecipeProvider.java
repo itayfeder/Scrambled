@@ -72,6 +72,8 @@ public class ScrambledRecipeProvider extends RecipeProvider {
         makeConditionalRec(buttonCond(p_176532_, BlockInit.MAHOGANY_BUTTON.get(), BlockInit.MAHOGANY_PLANKS.get()), p_176532_,  "enableMahoganyRecipes");
         makeConditionalRec(pressurePlateCond(p_176532_, BlockInit.MAHOGANY_PRESSURE_PLATE.get(), BlockInit.MAHOGANY_PLANKS.get()), p_176532_,  "enableMahoganyRecipes");
 
+        makeConditionalRec(SimpleCookingRecipeBuilder.smelting(Ingredient.of(ItemInit.BOTTLED_SOGGY_CLOUD.get()), ItemInit.BOTTLED_CLOUD.get(), 0.15F, 200).unlockedBy("has_bottled_soggy_cloud", has(ItemInit.BOTTLED_SOGGY_CLOUD.get())), p_176532_,  "enableCloudRecipes");
+
     }
 
     static ResourceLocation getDefaultRecipeId(ItemLike p_176494_) {

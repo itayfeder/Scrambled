@@ -70,4 +70,7 @@ public class ItemInit {
     public static final RegistryObject<Item> MAHOGANY_BUTTON = ITEMS.register("mahogany_button", () -> new BlockItem(BlockInit.MAHOGANY_BUTTON.get(), (new Item.Properties()).tab(ScrambledMod.TAB_MOD)));
     public static final RegistryObject<Item> MAHOGANY_PRESSURE_PLATE = ITEMS.register("mahogany_pressure_plate", () -> new BlockItem(BlockInit.MAHOGANY_PRESSURE_PLATE.get(), (new Item.Properties()).tab(ScrambledMod.TAB_MOD)));
 
+    public static final RegistryObject<Item> BOTTLED_CLOUD = ITEMS.register("bottled_cloud", () -> new BottledCloudItem((new Item.Properties()).tab(ScrambledMod.TAB_MOD).stacksTo(1), BlockInit.CLOUD_CHUNK.get()));
+    public static final RegistryObject<Item> BOTTLED_SOGGY_CLOUD = ITEMS.register("bottled_soggy_cloud", () -> new BottledCloudItem((new Item.Properties()).tab(ScrambledMod.TAB_MOD).stacksTo(1), BlockInit.SOGGY_CLOUD_CHUNK.get()));
+
 }

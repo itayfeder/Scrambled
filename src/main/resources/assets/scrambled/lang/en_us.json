@@ -72,6 +72,9 @@
   "block.scrambled.mahogany_button": "Mahogany Button",
   "block.scrambled.mahogany_pressure_plate": "Mahogany Pressure Plate",
 
+  "item.scrambled.bottled_cloud": "Bottled Cloud",
+  "item.scrambled.bottled_soggy_cloud": "Bottled Soggy Cloud",
+
   "advancements.adventure.place_item_frame.title": "Now You See Me",
   "advancements.adventure.place_item_frame.description": "Place an item inside the Item Frame",
   "advancements.adventure.place_phantom_item_frame.title": "Now You Don't",
@@ -93,5 +96,9 @@
   "advancements.nether.ring_of_attraction.title": "Opposites Attract!",
   "advancements.nether.ring_of_attraction.description": "Acquire a Ring of Attraction",
   "advancements.story.get_hardwood.title": "Acquire Hardwood",
-  "advancements.story.get_hardwood.description": "Find some Mahogany Wood"
+  "advancements.story.get_hardwood.description": "Find some Mahogany Wood",
+  "advancements.husbandry.get_bottled_cloud.title": "The Weatherman Was Wrong!",
+  "advancements.husbandry.get_bottled_cloud.description": "Find a Bottled Cloud",
+  "advancements.husbandry.get_bottled_soggy_cloud.title": "Don't Rain on My Parade",
+  "advancements.husbandry.get_bottled_soggy_cloud.description": "Find a Bottled Soggy Cloud"
 }

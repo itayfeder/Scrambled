@@ -1,0 +1,17 @@
+{
+  "name": "Bottled Clouds",
+  "icon": "scrambled:bottled_cloud",
+  "category": "scrambled:modules_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "scrambled:bottled_cloud",
+      "text": "Bottled Cloud is a new and unique item. Only findable from trades with the Wandering Trader, these items are capable of spawning a small Cloud Chunk where you look. These clouds are considered sky, so beacon light can pass through them. You can walk through them, but also stand on them using Feather Falling boots!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "scrambled:bottled_soggy_cloud",
+      "text": "When you dip the Bottled Clouds in a water Cauldron, they become soggy!. Bottled Soggy Clouds generate a Soggy Cloud Chunk, which has some interesting uses. These rain clouds can irrigate crops under it, and fill up cauldrons, to create artificial weather!"
+    }
+  ]
+}

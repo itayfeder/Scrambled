@@ -1,0 +1,22 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "config_enabled": "enableCloudRecipes",
+          "type": "scrambled:config_enabled"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:smelting",
+        "ingredient": {
+          "item": "scrambled:bottled_soggy_cloud"
+        },
+        "result": "scrambled:bottled_cloud",
+        "experience": 0.15,
+        "cookingtime": 200
+      }
+    }
+  ]
+}

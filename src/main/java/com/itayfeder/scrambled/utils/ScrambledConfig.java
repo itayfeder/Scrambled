@@ -38,6 +38,10 @@ public class ScrambledConfig {
         public final ForgeConfigSpec.BooleanValue enableMahoganyRecipes;
         public final ForgeConfigSpec.BooleanValue addMahoganyToTab;
 
+        public final ForgeConfigSpec.BooleanValue addCloudTrades;
+        public final ForgeConfigSpec.BooleanValue enableCloudRecipes;
+        public final ForgeConfigSpec.BooleanValue addCloudToTab;
+
         public Common(ForgeConfigSpec.Builder builder)
         {
             builder.push("flowerCrownModule");
@@ -81,6 +85,12 @@ public class ScrambledConfig {
             this.spawnMahoganyTrees = registerBool(builder.comment("Enables if Mahogany trees can spawn in the world").translation("scrambled.config.registry.spawn_mahogany_trees").define("spawnMahoganyTrees", true));
             this.enableMahoganyRecipes = registerBool(builder.comment("Enables recipes relating to the Mahogany module").translation("scrambled.config.registry.enable_mahogany_recipes").define("enableMahoganyRecipes", true));
             this.addMahoganyToTab = registerBool(builder.comment("Enables if Mahogany related items are added to the Scrambled Tab").translation("scrambled.config.registry.add_mahogany_to_tab").define("addMahoganyToTab", true));
+            builder.pop();
+
+            builder.push("cloudModule");
+            this.addCloudTrades = registerBool(builder.comment("Enables if Bottled Clouds can be bought from the Wandering Trader").translation("scrambled.config.registry.add_cloud_trades").define("addCloudTrades", true));
+            this.enableCloudRecipes = registerBool(builder.comment("Enables recipes relating to the Cloud module").translation("scrambled.config.registry.enable_cloud_recipes").define("enableCloudRecipes", true));
+            this.addCloudToTab = registerBool(builder.comment("Enables if Cloud related items are added to the Scrambled Tab").translation("scrambled.config.registry.add_cloud_to_tab").define("addCloudToTab", true));
             builder.pop();
         }
 

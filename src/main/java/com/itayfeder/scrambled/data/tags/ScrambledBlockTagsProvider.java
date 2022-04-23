@@ -29,6 +29,8 @@ public class ScrambledBlockTagsProvider extends BlockTagsProvider {
         this.tag(BlockTags.WOODEN_BUTTONS).add(BlockInit.MAHOGANY_BUTTON.get());
         this.tag(BlockTags.WOODEN_PRESSURE_PLATES).add(BlockInit.MAHOGANY_PRESSURE_PLATE.get());
 
+        this.tag(BlockTags.CLIMBABLE).add(BlockInit.CLOUD_CHUNK.get(), BlockInit.SOGGY_CLOUD_CHUNK.get());
+
         this.tag(BlockTags.NEEDS_STONE_TOOL).add(BlockInit.CONDUCTOR.get(), BlockInit.GINGERBREAD_BRICKS.get(), BlockInit.GINGERBREAD_BRICK_SLAB.get(), BlockInit.GINGERBREAD_BRICK_STAIRS.get(), BlockInit.ROCK_SALT.get());
         this.tag(BlockTags.MINEABLE_WITH_HOE).add(BlockInit.MAHOGANY_LEAVES.get());
         this.tag(BlockTags.MINEABLE_WITH_AXE).add(BlockInit.GINGERBREAD_BRICKS.get(), BlockInit.GINGERBREAD_BRICK_SLAB.get(), BlockInit.GINGERBREAD_BRICK_STAIRS.get());

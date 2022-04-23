@@ -33,6 +33,8 @@ public class ClientSetup {
         MenuScreens.register(MenuInit.CONDUCTOR.get(), ConductorScreen::new);
 
         ItemBlockRenderTypes.setRenderLayer(BlockInit.MAHOGANY_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockInit.CLOUD_CHUNK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(BlockInit.SOGGY_CLOUD_CHUNK.get(), RenderType.translucent());
 
         ItemProperties.register(ItemInit.COPPER_SWORD.get(), new ResourceLocation("charged"), (p_174610_, p_174611_, p_174612_, p_174613_) -> {
             return IChargedTool.isChargeBarVisible(p_174610_) ? 1.0F : 0.0F;

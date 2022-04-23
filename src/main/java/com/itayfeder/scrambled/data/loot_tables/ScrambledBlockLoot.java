@@ -40,6 +40,8 @@ public class ScrambledBlockLoot extends BlockLoot {
         this.dropSelf(BlockInit.MAHOGANY_BUTTON.get());
         this.dropSelf(BlockInit.MAHOGANY_PRESSURE_PLATE.get());
 
+        this.add(BlockInit.CLOUD_CHUNK.get(), createSilkTouchOnlyTable(Blocks.AIR));
+        this.add(BlockInit.SOGGY_CLOUD_CHUNK.get(), createSilkTouchOnlyTable(Blocks.AIR));
     }
 
     @Override

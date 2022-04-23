@@ -104,6 +104,10 @@ public class ScrambledCreativeTab extends CreativeModeTab {
             p_40778_.add(ItemInit.MAHOGANY_PRESSURE_PLATE.get().getDefaultInstance());
         }
 
+        if (ScrambledConfig.COMMON.addCloudToTab.get()) {
+            p_40778_.add(ItemInit.BOTTLED_CLOUD.get().getDefaultInstance());
+            p_40778_.add(ItemInit.BOTTLED_SOGGY_CLOUD.get().getDefaultInstance());
+        }
 
     }
 }

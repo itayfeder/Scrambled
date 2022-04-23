@@ -7,10 +7,7 @@ import com.itayfeder.scrambled.data.tags.ScrambledBlockTagsProvider;
 import com.itayfeder.scrambled.data.tags.ScrambledItemTagsProvider;
 import com.itayfeder.scrambled.events.BiomeSpawningEvents;
 import com.itayfeder.scrambled.init.*;
-import com.itayfeder.scrambled.utils.ConfigEnabledCondition;
-import com.itayfeder.scrambled.utils.ModdedWoodTypes;
-import com.itayfeder.scrambled.utils.ScrambledConfig;
-import com.itayfeder.scrambled.utils.ScrambledCreativeTab;
+import com.itayfeder.scrambled.utils.*;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.NonNullList;
 import net.minecraft.data.DataGenerator;
@@ -26,7 +23,10 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.event.village.VillagerTradesEvent;
+import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -79,6 +79,8 @@ public class ScrambledMod
             BiomeSpawningEvents.Setup();
 
             WoodType.register(ModdedWoodTypes.MAHOGANY);
+
+            CauldronStuff.register();
         });
     }
 
@@ -94,6 +96,14 @@ public class ScrambledMod
 
             dataGenerator.addProvider(new ScrambledRecipeProvider(dataGenerator));
             dataGenerator.addProvider(new ScrambledLootTableProvider(dataGenerator));
+        }
+    }
+
+    @SubscribeEvent
+    public static void villagerTradesEvent(WandererTradesEvent event) {
+        if (ScrambledConfig.COMMON.addCloudTrades.get()) {
+            event.getGenericTrades().add(new ScrambledVillagerTrades.ItemsForEmeralds(ItemInit.BOTTLED_CLOUD.get(), 5, 6, 8));
+
         }
     }
 }

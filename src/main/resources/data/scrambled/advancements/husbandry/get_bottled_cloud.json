@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "display": {
+    "icon": {
+      "item": "scrambled:bottled_cloud"
+    },
+    "title": {
+      "translate": "advancements.husbandry.get_bottled_cloud.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.get_bottled_cloud.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_bottled_cloud": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scrambled:bottled_cloud"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_bottled_cloud"
+    ]
+  ]
+}

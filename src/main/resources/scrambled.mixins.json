@@ -5,7 +5,8 @@
   "refmap": "scrambled.refmap.json",
   "mixins": [
     "ItemMixin",
-    "FoodDataMixin"
+    "FoodDataMixin",
+    "FarmBlockMixin"
   ],
   "client": [
     "HumanoidArmorLayerMixin",
